@@ -840,7 +840,7 @@ def create_merge(state, repo_cfg, branch, git_cfg, ensure_merge_equal=False):
                         'user.email=' + git_cfg['email'],
                         'merge',
                         'heads/homu-tmp',
-                        '--no-ff',
+                        '--ff',
                         '-m',
                         merge_msg))
                 except subprocess.CalledProcessError:
